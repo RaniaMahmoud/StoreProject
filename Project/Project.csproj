@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
@@ -97,6 +98,7 @@
     <Compile Include="PurchaseInvoiceForm.Designer.cs">
       <DependentUpon>PurchaseInvoiceForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PurInvoiceProducts.cs" />
     <Compile Include="ReportPurchaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +124,7 @@
     <Compile Include="SalesInvoiceForm.Designer.cs">
       <DependentUpon>SalesInvoiceForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SalesInvoiceProducts.cs" />
     <Compile Include="Store.cs" />
     <Compile Include="Stores.cs">
       <SubType>Form</SubType>
