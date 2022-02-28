@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Project
 {
-    public class PurchaseInvoice:Invoice
+    public class PurchaseInvoice : Invoice
     {
-        public List<Product> Products { get; set; }
-        public string Supplier { get; set; }
+        [Key]
         public static int ID = 0;
+        public virtual List<Product> Products { get; set; }
+        public virtual string Supplier { get; set; }
         public PurchaseInvoice()
         {
             ID++;

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,11 +9,13 @@ namespace Project
 {
     public class Category
     {
-        #region Member
+        #region Prop
+        public int ID { set; get; }
+        [Required]
         public string Name { get; set; }
         #endregion
-        #region Collection Of Products
-        public List<Product> Products { get; set; }
+        #region Collection Of Product
+        public virtual List<Product> Products { get; set; }
         #endregion
         #region Constructor
         public Category()
