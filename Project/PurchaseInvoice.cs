@@ -15,6 +15,7 @@ namespace Project
         public virtual string Supplier { get; set; }
         public PurchaseInvoice()
         {
+
             ID++;
             Products = new List<Product>();
         }
